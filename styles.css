@@ -1,0 +1,215 @@
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(font/RedHatDisplay-VariableFont_wght.ttf)
+}
+
+:root {
+  --pale_blue: hsl(225, 100%, 94%);
+  --right_blue: hsl(245, 75%, 52%);
+
+  --very_pale_blue: hsl(225, 100%, 98%);
+  --desaturated_blue: hsl(224, 23%, 55%);
+  --dark_blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  min-height: 100vh;
+
+  background-color: var(--pale_blue);
+  font-family: RedHatDisplay;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+#bg-image {
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.card-container {
+  text-align: center;
+  max-width: fit-content;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 25px 15px hsla(245, 75%, 52%, .15);
+  z-index: 100;
+}
+
+.image-holder img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.order-summary-section {
+  padding: 2.5rem 3rem 3rem ;
+}
+
+h1 {
+  font-size: 1.76rem;
+  font-weight: 900;
+  color: var(--dark_blue);
+}
+
+#main-paragraph {
+  margin: 1.1rem auto;
+  max-width: 300px;
+  font: 500 16px/1.6 'RedHatDisplay';
+  line-height: 1.65;
+  color: var(--desaturated_blue);
+}
+
+.order-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--very_pale_blue);
+  margin-bottom: 2rem;
+  padding: 1.4rem 1.5rem;
+  border-radius: 10px;
+}
+
+.purchase-plan-info {
+  margin-left: -75px;
+  font-size: 16px;
+}
+
+.purchase-plan-info h2 {
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: var(--dark_blue);
+  
+}
+
+#plan-price {
+  font-weight: 500;
+  color: var(--desaturated_blue);
+}
+
+#change-order {
+font-size: 14px;
+font-weight: 700;
+color: var(--right_blue);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  opacity: .7;
+}
+
+#proceed-to-payment {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--right_blue);
+  color: #ffffff;
+  font-size: 15.4px;
+  font-weight: 700;
+  padding: .95rem 2.5rem;
+  border: 1px solid var(--desaturated_blue);
+  border-radius: 10px;
+  margin-bottom: 1.9rem;
+  box-shadow: 0 25px 18px hsla(245, 75%, 52%, .15);
+  cursor: pointer;
+}
+
+#proceed-to-payment:hover {
+  opacity: .7;
+}
+
+#proceed-to-payment:active {
+  opacity: .8;
+}
+
+#cancel-order {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--desaturated_blue);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#cancel-order:hover {
+ color: unset;
+}
+
+#cancel-order:active {
+  opacity: .7;;
+ }
+
+ @media (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+
+  .image-holder img {
+    width: 240px;
+    
+  }
+
+  .order-summary-section {
+    padding: 1.1rem 1.1rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  #main-paragraph {
+    width: 200px;
+    font-size: 12px;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  .order-details {
+    padding: .5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #music-icon {
+    width: 35px;
+  }
+
+  .purchase-plan-info h2, #plan-price {
+    font-size: 11px;
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+
+  #change-order {
+    font-size: 10px;
+  }
+
+  #proceed-to-payment {
+    font-size: 10px;
+    padding: 12px;
+    margin-bottom: 0.8rem;
+  }
+
+  #cancel-order {
+    font-size: 11px;
+   }
+ }
