@@ -165,51 +165,39 @@ a:active {
   }
 
   .image-holder img {
-    width: 240px;
-    
+    width: 330px;
   }
 
   .order-summary-section {
-    padding: 1.1rem 1.1rem 1.5rem;
+    padding: 1.8rem 1.5rem;
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   #main-paragraph {
-    width: 200px;
-    font-size: 12px;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
+    width: 250px;
+    font-size: 15px;
+    margin-bottom: 1.7rem;
   }
 
   .order-details {
-    padding: .5rem;
-    margin-bottom: 1.2rem;
-  }
-
-  #music-icon {
-    width: 35px;
+    padding: .8rem;
+    margin-bottom: 1.5rem;
   }
 
   .purchase-plan-info h2, #plan-price {
-    font-size: 11px;
+    font-size: 15px;
     margin-left: 50px;
     margin-bottom: 0;
   }
 
   #change-order {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   #proceed-to-payment {
-    font-size: 10px;
-    padding: 12px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.3rem;
   }
-
-  #cancel-order {
-    font-size: 11px;
-   }
  }
