@@ -26,7 +26,7 @@ body {
   font-family: RedHatDisplay;
 }
 
-.main-container {
+.background {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ h1 {
   color: var(--dark_blue);
 }
 
-#main-paragraph {
+#paragraph {
   margin: 1.1rem auto;
   max-width: 300px;
   font: 500 16px/1.6 'RedHatDisplay';
@@ -165,39 +165,51 @@ a:active {
   }
 
   .image-holder img {
-    width: 330px;
+    width: 240px;
+    
   }
 
   .order-summary-section {
-    padding: 1.8rem 1.5rem;
+    padding: 1.1rem 1.1rem 1.5rem;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
-  #main-paragraph {
-    width: 250px;
-    font-size: 15px;
-    margin-bottom: 1.7rem;
+  #paragraph {
+    width: 200px;
+    font-size: 12px;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
   }
 
   .order-details {
-    padding: .8rem;
-    margin-bottom: 1.5rem;
+    padding: .5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  #music-icon {
+    width: 35px;
   }
 
   .purchase-plan-info h2, #plan-price {
-    font-size: 15px;
+    font-size: 11px;
     margin-left: 50px;
     margin-bottom: 0;
   }
 
   #change-order {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   #proceed-to-payment {
-    margin-bottom: 1.3rem;
+    font-size: 10px;
+    padding: 12px;
+    margin-bottom: 0.8rem;
   }
+
+  #cancel-order {
+    font-size: 11px;
+   }
  }
